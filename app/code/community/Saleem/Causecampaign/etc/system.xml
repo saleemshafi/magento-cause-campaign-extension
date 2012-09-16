@@ -1,42 +1,42 @@
 <?xml version="1.0"?>
 <config>
-    <tabs>
-        <cause_tab translate="label" module="causecampaign">
-            <label>Cause Campaigns</label>
-            <sort_order>357</sort_order>
-        </cause_tab>
-    </tabs>
-    <sections>
-        <causecampaign translate="label" module="causecampaign">
-            <label>Cause Campaigns</label>
-            <tab>cause_tab</tab>
-            <frontend_type>text</frontend_type>
-            <sort_order>57</sort_order>
-            <show_in_default>1</show_in_default>
-            <show_in_website>1</show_in_website>
-            <show_in_store>1</show_in_store>
-            <groups>
-            
-                <general translate="label">
-                    <label>General</label>
-                    <frontend_type>text</frontend_type>
-                    <sort_order>10</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <enabled translate="label">
-                            <label>This is something</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </enabled>
+	<tabs>
+		<cause_tab translate="label">
+			<label>Cause Campaigns</label>
+			<sort_order>357</sort_order>
+		</cause_tab>
+	</tabs>
+	<sections>
+		<causecampaign translate="label" module="adminhtml">
+			<label>Cause Campaigns</label>
+			<tab>cause_tab</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>57</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+
+				<general translate="label">
+					<label>General</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<something translate="label">
+							<label>This is something</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</something>
 					</fields>
 				</general>
-            
-            </groups>
-        </causecampaign>
+
+			</groups>
+		</causecampaign>
 	</sections>
 </config>

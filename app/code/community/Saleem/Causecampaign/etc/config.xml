@@ -6,15 +6,22 @@
 		</Saleem_Causecampaign>
 	</modules>
 	<global>
-        <helpers>
-            <causecampaign>
-                <class>Saleem_Causecampaign_Helper</class>
-            </causecampaign>
-        </helpers>
-        <blocks>
-             <causecampaign>
-                <class>Saleem_Causecampaign_Block</class>
-             </causecampaign>
-        </blocks>
-    </global>
+		<helpers>
+			<causecampaign>
+				<class>Saleem_Causecampaign_Helper</class>
+			</causecampaign>
+		</helpers>
+		<blocks>
+			<causecampaign>
+				<class>Saleem_Causecampaign_Block</class>
+			</causecampaign>
+		</blocks>
+	</global>
+	<default>
+		<causecampaign>
+			<general>
+				<something>this is a default value</something>
+			</general>
+		</causecampaign>
+	</default>
 </config>
