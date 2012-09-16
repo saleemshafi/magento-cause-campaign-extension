@@ -7,7 +7,7 @@
 		</cause_tab>
 	</tabs>
 	<sections>
-		<causecampaign translate="label" module="adminhtml">
+		<causecampaign translate="label">
 			<label>Cause Campaigns</label>
 			<tab>cause_tab</tab>
 			<frontend_type>text</frontend_type>
@@ -19,22 +19,92 @@
 
 				<general translate="label">
 					<label>General</label>
-					<frontend_type>text</frontend_type>
+                    <expanded>1</expanded>
 					<sort_order>10</sort_order>
 					<show_in_default>1</show_in_default>
 					<show_in_website>1</show_in_website>
 					<show_in_store>1</show_in_store>
 					<fields>
-						<something translate="label">
-							<label>This is something</label>
+						<start_date translate="label comment">
+							<label>Start date</label>
+                            <comment>mm/dd/yy</comment>
 							<frontend_type>text</frontend_type>
 							<sort_order>1</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-						</something>
+						</start_date>
+						<end_date translate="label comment">
+							<label>End date</label>
+                            <comment>mm/dd/yy</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</end_date>
+						<charity translate="label">
+							<label>Charity</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</charity>
+						<target translate="label comment">
+							<label>Campaign Target</label>
+							<comment>target amount to collect for the campaign</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</target>
 					</fields>
 				</general>
+
+				<pledge translate="label">
+					<label>Pledges</label>
+                    <expanded>1</expanded>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<pledge_type translate="label">
+							<label>Pledge Type</label>
+							<frontend_type>text</frontend_type>
+							<!-- 
+							<frontend_type>select</frontend>
+							<source_model>{ need to get percent, flat amount, or none }</source_model>
+							-->
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</pledge_type>
+						<pledge_rate translate="label comment">
+							<label>Pledge Rate</label>
+							<comment>enter rate as percent of sales, e.g. "10" for 10%</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends><pledge_type>rate</pledge_type></depends>
+						</pledge_rate>
+						<pledge_amount translate="label comment">
+							<label>Pledge Amount</label>
+							<comment>enter amount per order to pledge</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends><pledge_type>amount</pledge_type></depends>
+						</pledge_amount>
+					</fields>
+				</pledge>
 
 			</groups>
 		</causecampaign>

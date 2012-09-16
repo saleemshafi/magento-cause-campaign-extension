@@ -20,8 +20,16 @@
 	<default>
 		<causecampaign>
 			<general>
-				<something>this is a default value</something>
+				<start_date></start_date>
+				<end_date></end_date>
+				<charity></charity>
+				<target>1000</target>
 			</general>
+			<pledge>
+				<pledge_type>rate</pledge_type>
+				<pledge_rate>2</pledge_rate>
+				<pledge_amount>1</pledge_amount>
+			</pledge>
 		</causecampaign>
 	</default>
 </config>
