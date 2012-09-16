@@ -16,6 +16,11 @@
 				<class>Saleem_Causecampaign_Block</class>
 			</causecampaign>
 		</blocks>
+		<models>
+			<causecampaign>
+				<class>Saleem_Causecampaign_Model</class>
+			</causecampaign>
+		</models>
 	</global>
 	<default>
 		<causecampaign>
