@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<widgets>
+    <causecampaign_banner type="causecampaign/banner">
+        <name>Cause Campaign Banner</name>
+        <description type="desc">Advertises the cause campaign that the merchant has setup.</description>
+    </causecampaign_banner>
+</widgets>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package>
+	<name>magento_cause_campaign</name>
+	<version>1.0</version>
+	<stability>alpha</stability>
+	<license uri="http://creativecommons.org/licenses/by/3.0/">Creative Commons License</license>
+	<channel>community</channel>
+	<extends />
+	<summary>Magento Cause Campaign Module</summary>
+	<description></description>
+	<notes>Magento Cause Campaign Module</notes>
+	<authors>
+		<author>
+			<name>Saleem Shafi</name>
+			<user>auto-converted</user>
+			<email>saleemshafi@x.com</email>
+		</author>
+	</authors>
+	<date>2012/09/13</date>
+	<contents>
+		<target name="magecommunity">
+			<dir name="Saleem">
+				<dir name="Causecampaign">
+					<dir name="Block">
+						<file name="Banner.php" />
+					</dir>
+					<dir name="Helper">
+						<file name="Data.php" />
+					</dir>
+					<dir name="etc">
+						<file name="config.xml" />
+						<file name="system.xml" />
+						<file name="widget.xml" />
+					</dir>
+				</dir>
+			</dir>
+		</target>
+		<target name="mageetc">
+			<dir name="modules">
+				<file name="Saleem_Causecampaign.xml" />
+			</dir>
+		</target>
+		<target name="magedesign">
+			<dir name="frontend">
+				<dir name="default">
+					<dir name="default">
+						<dir name="template">
+							<dir name="causecampaign">
+								<file name="banner.phtml" />
+							</dir>
+						</dir>
+					</dir>
+				</dir>
+			</dir>
+		</target>
+	</contents>
+	<compatible />
+	<dependencies />
+</package>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Saleem_Causecampaign>
+			<version>1.0.0</version>
+		</Saleem_Causecampaign>
+	</modules>
+	<global>
+        <helpers>
+            <causecampaign>
+                <class>Saleem_Causecampaign_Helper</class>
+            </causecampaign>
+        </helpers>
+        <blocks>
+             <causecampaign>
+                <class>Saleem_Causecampaign_Block</class>
+             </causecampaign>
+        </blocks>
+    </global>
+</config>
