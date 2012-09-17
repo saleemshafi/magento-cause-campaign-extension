@@ -10,7 +10,8 @@ class Saleem_Causecampaign_Block_PledgeBanner
 	}
 	
 	public function getCharity() { 
-		return Mage::getStoreConfig('causecampaign/general/charity',Mage::app()->getStore());
+		$charityId = Mage::getStoreConfig('causecampaign/general/charity',Mage::app()->getStore());
+		return Mage::getSingleton('causecampaign/charity')->getName($charityId); 
 	}
 	
 	public function getTarget() { 
